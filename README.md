@@ -21,7 +21,7 @@ npm run check
 npm run build
 ```
 
-Local preview: http://localhost:4173. Build output: `public/`.
+Local preview: http://localhost:4173. Optional local build output: `public/`. Cloudflare serves the same static files directly from `src/`, so dashboard deployments also work when the build command is blank.
 
 ## Publish on Cloudflare Workers
 
@@ -32,9 +32,9 @@ In Workers & Pages, create a Worker connected to `samlim-415/ratio73`:
 | Worker name | `ratio73` |
 | Production branch | `main` |
 | Root directory | `/` |
-| Build command | `npm run build` |
+| Build command | Leave blank (not required for this static site) |
 | Deploy command | `npx wrangler@4 deploy` |
-| Assets directory | `./public` (already configured) |
+| Assets directory | `./src` (already configured; present in Git) |
 
 Enable the Worker’s `workers.dev` route under Settings → Domains & Routes. Cloudflare assigns the actual URL using the account’s configured subdomain. Do not treat an anticipated hostname as a verified deployment. No app-specific secrets or environment variables are needed for this static preview. Future GitHub pushes can deploy automatically when Workers Builds is connected.
 
