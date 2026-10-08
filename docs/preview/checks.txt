@@ -1,0 +1,1 @@
+PASS: build and JavaScript syntax; product image; all translation keys; bag quantity/remove/currency totals; demo price-match and newsletter; no email persistence; 3 languages at 1440/768/390/320px without horizontal overflow; remembered preferences; mobile navigation. No browser errors.
