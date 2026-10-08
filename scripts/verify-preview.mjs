@@ -1,6 +1,7 @@
 import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
+import { resolve } from 'node:path';
 await mkdir('docs/preview', { recursive: true });
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:1440,height:1000}});
@@ -41,7 +42,7 @@ for(const lang of ['en','ko','zh']){
     await page.setViewportSize({width,height:900});
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${lang} at ${width}px must not overflow`);
     assert.equal(await page.locator('.hero-product').isVisible(),true);
-    if(width===390){await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`docs/preview/mobile-${lang}.png`});}
+    if(width===390){await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));await page.screenshot({path:`docs/preview/mobile-${lang}.png`});}
   }
 }
 await page.reload();assert.equal(await page.locator('#language').inputValue(),'zh');assert.equal(await page.locator('#currency').inputValue(),'USD');
@@ -55,4 +56,11 @@ await page.locator('#shop').screenshot({path:'docs/preview/mobile-product.png'})
 assert.deepEqual(errors,[]);
 await writeFile('docs/preview/checks.txt','PASS: build and JavaScript syntax; product image; all translation keys; bag quantity/remove/currency totals; demo price-match and newsletter; no email persistence; 3 languages at 1440/768/390/320px without horizontal overflow; remembered preferences; mobile navigation. No browser errors.\n');
 console.log('All storefront preview checks passed.');
+await page.goto('file://' + resolve('docs/ratio73-preview.html'));
+await page.locator('.hero-product').evaluate(img=>img.decode());
+assert.equal(await page.locator('.hero-product').evaluate(img=>img.naturalWidth),1400);
+await page.locator('#language').selectOption('ko');
+assert.equal(await page.locator('html').getAttribute('lang'),'ko');
+assert.deepEqual(errors,[]);
+console.log('Standalone downloadable preview also verified.');
 await browser.close();
