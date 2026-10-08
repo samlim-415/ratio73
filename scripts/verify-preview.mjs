@@ -62,5 +62,5 @@ assert.equal(await page.locator('.hero-product').evaluate(img=>img.naturalWidth)
 await page.locator('#language').selectOption('ko');
 assert.equal(await page.locator('html').getAttribute('lang'),'ko');
 assert.deepEqual(errors,[]);
-console.log('Standalone downloadable preview also verified.');
+console.log('Standalone downloadable preview also verified, including language switching.');
 await browser.close();
