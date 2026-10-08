@@ -14,7 +14,7 @@ const translations = {
     title:'ratio73 — Korean skincare. A better ratio.',emailPlaceholder:'Your email address'
   },
   ko: {
-    skip:'본문으로 이동',announcement:'70% 오래 사랑받는 제품. 30% 새롭게 사랑할 제품.',preview:'미리보기',shop:'셀렉션 보기',ourRatio:'우리의 비율',promise:'우리의 약속',club:'ratio club',language:'언어',currency:'통화',
+    skip:'본문으로 이동',announcement:'호주와 미국에서 곧 만나요.',preview:'미리보기',shop:'셀렉션 보기',ourRatio:'우리의 비율',promise:'우리의 약속',club:'ratio club',language:'언어',currency:'통화',
     mainNav:'주 메뉴',mobileNav:'모바일 메뉴',bag:'장바구니',menu:'메뉴 열기',close:'닫기',decrease:'수량 줄이기',increase:'수량 늘리기',
     heroKicker:'생각을 담아 고른 한국 스킨케어.',heroLine1:'좋은 스킨케어.',heroLine2:'더 나은 비율.',heroDescription:'꾸준히 찾게 되는 스테디셀러와 새롭게 발견하는 즐거움. 끝없는 검색 대신, 세심하게 고른 한국 스킨케어를 만나보세요.',discover:'첫 번째 코어 제품 만나기',heroCaption:'오래 사랑받는 제품. 새롭게 사랑할 제품.',coreEdit:'코어 셀렉션',productName:'마데카 크림<br>타임 리버스',
     trust1:'믿을 수 있는 한국 정품 스킨케어',trust2:'재고가 있는 제품은 빠르게 발송',trust3:'매일 만나는 합리적인 가격',
@@ -28,7 +28,7 @@ const translations = {
     privacyTitle:'미리보기의 개인정보 안내',privacyText:'이 미리보기에서는 뉴스레터나 가격 매칭 정보를 서버로 전송하지 않습니다. 언어, 통화와 예시 장바구니는 현재 브라우저에만 저장됩니다. 광고·분석 추적 기능은 사용하지 않습니다. 호스팅 업체는 일반적인 접속 로그를 처리할 수 있습니다. 고객 정보 수집 전 정식 개인정보 처리방침과 연락처를 공개하겠습니다.',termsTitle:'미리보기 안내',termsText:'ratio73은 한국 스킨케어 큐레이션 판매점 콘셉트입니다. 이 사이트는 디자인과 기능 체험용이며, 정식 판매점이 아닙니다. 가격은 예시이고 재고는 미확정입니다. 주문·결제·멤버십·이메일 구독은 생성되지 않습니다. 제품 브랜드와 이미지의 권리는 각 소유자에게 있습니다. 정식 사업 정보와 정책은 출시 전에 공개하겠습니다.',deliveryTitle:'배송 및 반품',deliveryInfo:'호주와 미국 출시를 준비하고 있습니다. 주문 시작 전 현지 재고, 배송 지역, 배송비, 발송 예상 일정과 반품 조건을 확정하겠습니다. 통화 변경은 가격 표시에만 영향을 주며 배송 국가를 바꾸지 않습니다.',title:'ratio73 — 한국 스킨케어. 더 나은 비율.'
   },
   zh: {
-    skip:'跳转至正文',announcement:'70% 久经喜爱。30% 新有所爱。',preview:'预览',shop:'选购精选',ourRatio:'我们的比例',promise:'我们的承诺',club:'ratio club',language:'语言',currency:'货币',mainNav:'主导航',mobileNav:'移动端导航',bag:'购物袋',menu:'打开菜单',close:'关闭',decrease:'减少数量',increase:'增加数量',
+    skip:'跳转至正文',announcement:'即将登陆澳大利亚与美国。',preview:'预览',shop:'选购精选',ourRatio:'我们的比例',promise:'我们的承诺',club:'ratio club',language:'语言',currency:'货币',mainNav:'主导航',mobileNav:'移动端导航',bag:'购物袋',menu:'打开菜单',close:'关闭',decrease:'减少数量',increase:'增加数量',
     heroKicker:'用心精选的韩国护肤。',heroLine1:'好护肤。',heroLine2:'好比例。',heroDescription:'值得反复回购的经典，也有令人心动的新发现。用心精选韩国护肤，让你不必再无尽翻找。',discover:'认识我们的首款经典',heroCaption:'久经喜爱。新有所爱。',coreEdit:'经典精选',productName:'Madeca Cream<br>Time Reverse 面霜',trust1:'正品韩国护肤',trust2:'现货好物，快速发出',trust3:'日常好价',
     ratioKicker:'少一点纠结，多一点好护肤。',ratioTitle:'我们的比例，自有道理。',ratioDescription:'我们以长期受欢迎的产品为核心，也为新发现留一点空间。用简单的平衡，建立值得信赖的精选系列。',coreLabel:'经典核心',coreTitle:'值得一再回购。',coreDescription:'用过、信赖、再次回购。超越短暂热度，经得起时间考验的护肤好物。',exploreCore:'探索首款经典',trendLabel:'新鲜发现',trendTitle:'给新鲜感留个位置。',trendDescription:'从社交平台热议的产品中用心挑选，为下一个值得了解的护肤新发现留出空间。',trendComing:'人气新品精选 · 稍后推出',rangeNote:'70/30 是我们扩充产品系列的方向。目前先从一款经典开始。',
     firstPick:'经典 01 / 首款精选',madeInKorea:'韩国制造',launchPick:'为日常护肤，打好第一步基础。',productSubtitle:'第 7 代 · 日常保湿面霜 · 50 mL',productDescription:'认识我们的首款经典。蕴含积雪草成分的日常滋养面霜，帮助肌肤保持水润、柔软与舒适。',tag1:'保湿滋润',tag2:'积雪草呵护',tag3:'日常护理',samplePrice:'示例价格',launchSoon:'即将上市 · 库存待确认',addToBag:'加入预览购物袋',priceMatchCta:'发现更低的日常售价？',whyPick:'为何入选经典系列',whyPickText:'来自东国制药旗下 Centellian24 的日常保湿面霜。我们选择这款长期受欢迎的韩国护肤产品作为开端，让日常护理从简单开始。',howToUse:'使用方法',howToUseText:'早晚在护肤的最后一步，取少量轻柔涂抹于肌肤。早间使用后，请涂抹防晒产品。',ingredients:'成分与产品详情',ingredientsText:'含积雪草提取物、烟酰胺和泛醇。配方含芳香精油。使用前请查看完整成分表及产品包装。',fullIngredients:'查看品牌完整成分表',delivery:'配送与库存',deliveryText:'我们计划首先在澳大利亚和美国推出。开放订购前，将确认发货时间、运费和当地库存情况。',
