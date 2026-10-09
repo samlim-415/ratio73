@@ -10,3 +10,6 @@
 @media(max-width:1100px){.hero-visual{min-height:575px}.product-photo img{padding:50px 5px}}
 @media(max-width:800px){.hero-visual{min-height:535px}.hero-product{inset:12% -15% 10%;width:130%;height:75%;max-width:130%}.product-photo img{padding:35px 0}}
 @media(max-width:600px){.hero-visual{min-height:0;height:440px}.hero-product{inset:5% 0 12%;width:100%;height:82%;max-width:100%}.product-photo img{padding:35px 0}.hero-visual:before{top:31%;height:35%}}
+
+/* Make the Club 73 community proposition scannable without changing its layout. */
+.club-copy>p.club-tagline{max-width:435px;font-size:1.125rem;font-weight:600;line-height:1.35;letter-spacing:-.015em;margin:0 0 9px}
