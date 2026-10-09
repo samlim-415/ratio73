@@ -13,3 +13,49 @@
 
 /* Make the Club 73 community proposition scannable without changing its layout. */
 .club-copy>p.club-tagline{max-width:435px;font-size:1.125rem;font-weight:600;line-height:1.35;letter-spacing:-.015em;margin:0 0 9px}
+
+/* Product discovery: source-backed story first; detailed ingredients on demand. */
+.hero-product-link{position:absolute;inset:0;z-index:2;display:block}
+.product-photo .photo-zoom-trigger{position:absolute;inset:0;width:100%;height:100%;min-height:0;padding:0;background:transparent;display:flex;justify-content:center;align-items:center;overflow:hidden}
+.product-photo .photo-zoom-trigger img{width:100%;height:100%;max-height:560px;object-fit:contain}
+.product-photo>.pill,.product-photo .photo-foot{pointer-events:none}
+.zoom-hint{position:absolute;right:22px;top:23px;z-index:2;padding:8px 11px;border:1px solid #bec6b2;background:#fcfcf8ed;border-radius:3px;font-size:.72rem;line-height:1.35;white-space:nowrap;letter-spacing:.01em}
+.photo-zoom-trigger:hover .zoom-hint{background:#fff}
+.product-reason{margin:22px 0 8px;border-left:3px solid var(--green-dark);background:#eff1e9;padding:17px 19px 18px}
+.product-reason .eyebrow{font-size:.68rem;letter-spacing:.09em;color:var(--green-dark)}
+.product-reason>p:not(.eyebrow){margin-top:9px;font-size:.88rem;line-height:1.6;color:var(--ink)}
+.product-reason .text-link{margin-top:11px;text-align:left;font-size:.82rem;line-height:1.5}
+.product-reason+.product-tags{margin-top:20px}
+.product-accordions .detail-body{padding-bottom:21px}
+.product-accordions .detail-body>p{padding:0;margin:0 0 13px;font-size:.875rem;line-height:1.65}
+.product-accordions details:has(.detail-body)>summary{font-weight:500}
+.brand-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:19px 0 17px}
+.brand-proof>div{border:1px solid var(--line);background:#f4f5ef;padding:13px 12px;min-width:0}
+.brand-proof strong{display:block;font-size:1.48rem;line-height:1.2;letter-spacing:-.04em;margin-bottom:8px;white-space:nowrap}
+.brand-proof span{display:block;color:var(--muted);font-size:.71rem;line-height:1.5;overflow-wrap:anywhere}
+.product-accordions .detail-body>p.source-note,.product-accordions .detail-body .source-note{font-size:.74rem;color:var(--muted);line-height:1.6;margin:9px 0 11px;padding:0}
+.source-links{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:13px}
+.source-links a{font-size:.76rem;text-decoration:underline;text-underline-offset:4px;display:inline-flex;align-items:center;padding:8px 0;min-height:40px;line-height:1.4}
+.source-links a:hover{opacity:.7}
+.ingredient-highlights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:17px 0;padding:0}
+.ingredient-highlights>div{border:1px solid var(--line);padding:13px 15px;min-width:0}
+.ingredient-highlights dt{font-size:.88rem;font-weight:600;line-height:1.5}
+.ingredient-highlights dd{margin:7px 0 0;font-size:.79rem;color:var(--muted);line-height:1.55}
+.product-accordions .detail-body>p.ingredient-caution{font-size:.8rem;color:var(--muted)}
+.product-accordions .inci-details{margin:17px 0 14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.product-accordions .inci-details summary{font-size:.84rem}
+.product-accordions .inci-details .inci-text{font-size:.77rem;color:var(--muted);line-height:1.7;overflow-wrap:anywhere;padding:0;margin:0 0 14px}
+.product-accordions .detail-body>.text-link{display:inline-block;margin:3px 0 0;font-size:.78rem}
+.photo-dialog{width:min(690px,calc(100vw - 26px));max-width:calc(100vw - 26px);padding:22px;overflow-y:auto}
+.photo-dialog .dialog-head{margin-bottom:16px}
+.photo-dialog .dialog-head h2{font-size:1.2rem;letter-spacing:-.025em}
+.photo-dialog img{width:100%;max-height:calc(100dvh - 195px);object-fit:contain;background:var(--soft)}
+.photo-dialog>p{margin-top:10px;font-size:.74rem;color:var(--muted)}
+@media(max-width:600px){
+  .product-reason{margin:20px 0 9px;padding:17px}
+  .brand-proof{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .brand-proof>div:last-child{grid-column:1/-1}
+  .ingredient-highlights{grid-template-columns:1fr}
+  .zoom-hint{top:21px;right:20px;font-size:.68rem}
+  .photo-dialog{padding:17px}
+}

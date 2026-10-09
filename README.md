@@ -6,7 +6,7 @@ A multilingual Korean skincare storefront mockup. The range philosophy is 70% tr
 
 - English, Korean and Simplified Chinese; language and currency are independent.
 - AUD and USD sample price books (A$24 / US$16), not live exchange rates or confirmed selling prices.
-- Responsive landing page, product information, editable preview bag, planned Club 73 membership, newsletter and price-match form demonstrations.
+- Responsive landing page, photo enlargement, prominently linked Madeca Cream product story, source-backed proof points, full expandable INCI ingredients, editable preview bag, planned Club 73 membership, newsletter and price-match form demonstrations.
 - Club 73 is planned to be free to join. Members may eventually suggest products and vote on a vetted shortlist; requests and votes will inform but not guarantee stocking decisions. There is no live membership registration, nomination or voting in this preview.
 - Only language, currency and sample bag quantity persist in browser local storage.
 - No real orders, payments, newsletter subscriptions, price-match submissions or loyalty accounts are created.
@@ -51,13 +51,17 @@ Confirm selling prices, country-specific inventory/fulfilment, taxes and shippin
 - `scripts/build.mjs`: copies only public source assets into `public/`.
 - `wrangler.jsonc`: Cloudflare static assets configuration.
 
-## Product sources
+## Product sources and claim limits
 
-Checked 8 October 2026:
+Checked 10 October 2026:
 
-- User-supplied reference: https://global.oliveyoung.com/product/detail?prdtNo=GA240121561&dataSource=search_result
-- Product facts, ingredients and usage: https://centellian24.com/products/centellian24-madeca-cream-time-reverse-season-7-50ml
-- Product photograph: https://www.ulta.com/p/madeca-cream-time-reverse-pimprod2058852?sku=2657775
+- Manufacturer brand history (Dongkook founded 1968): https://madeca.com/pages/about-centellian-24
+- Dongkook Pharmaceutical, Madeca Cream launch in 2015 and manufacturer-reported 91 million+ **cumulative units across the Madeca Cream range through February 2026** (not specifically Season 7): https://www.dkpharm.co.kr/boards/view.php?btype=news&idx=1082
+- Olive Young Global, **4.7/5 across 451 reviews of the listed 50 mL item**, checked 10 Oct 2026: https://global.oliveyoung.com/product/detail?prdtNo=GA240121561
+- Official product details, INCI ingredients, usage and retinol/fragrant essential oils: https://centellian24.com/products/centellian24-madeca-cream-time-reverse-season-7-50ml
+- Product photograph source: https://www.ulta.com/p/madeca-cream-time-reverse-pimprod2058852?sku=2657775
 - Photograph file: https://media.ulta.com/i/ulta/2657775?fmt=auto&h=1400&w=1400
 
-The unaltered product photograph is used for this design mockup; no reproduction licence has been established. Product trademarks and photographs belong to their owners. Obtain supplier-approved assets for commercial use. No Olive Young ranking, review score, independent test result or authorised-dealer status is claimed.
+The Madeca Cream figures are company-reported, not independently audited here. Olive Young ratings and review totals may change. **No claim is made that Season 7 itself sold 91 million units or that this listing holds a particular Olive Young ranking.** Before commercial launch, revalidate evidence and formulation against the stock/market actually sold, obtain supplier-approved product images, and assess cosmetic ingredient information and regulatory wording.
+
+The unaltered product photograph is used for this design mockup; no reproduction licence has been established. Product trademarks and photographs belong to their owners. No authorised-dealer status is claimed.
